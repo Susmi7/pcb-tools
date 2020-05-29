@@ -14,8 +14,6 @@ ctx = GerberCairoContext()
 # Create a new PCB instance
 pcb = PCB.from_directory(GERBER_FOLDER)
 
-
-
 # Render PCB bottom view
 ctx.render_layers(pcb.bottom_layers,
                   os.path.join(os.path.dirname(__file__), 'not-working-bottom.png'), max_width=800, max_height=600)
